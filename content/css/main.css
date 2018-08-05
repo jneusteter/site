@@ -7,7 +7,7 @@ h4, h3, h2, h1, nav {
   font-family: 'Oswald', sans-serif;
 }
 
-header {
+#header {
   background-image: url('/img/header.jpg');
   min-height: 800px;
   margin-top: -15px;
@@ -17,4 +17,8 @@ header {
 
 .fa {
   color: #F05F40;
+}
+
+.navbar-brand {
+  font-size: 21px;
 }
