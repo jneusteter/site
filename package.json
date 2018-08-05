@@ -4,7 +4,9 @@
   "description": "jneusteter personal site.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --config webpack.config.js --mode=development",
+    "production": "webpack --no-progress --config webpack.config.js --mode=production",
+    "watch": "npm run dev -- --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/jneusteter/site#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "eslint": "^5.2.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
@@ -25,5 +29,8 @@
     "eslint-plugin-standard": "^3.1.0",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2"
   }
 }
