@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    builder (3.2.3)
     colored (1.2)
     concurrent-ruby (1.0.5)
     cri (2.10.1)
@@ -36,6 +37,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   kramdown
   nanoc
 

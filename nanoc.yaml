@@ -11,3 +11,5 @@ data_sources:
     encoding: utf-8
 
 output_dir: web
+
+base_url: http://jneusteter.ca
