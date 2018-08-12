@@ -8,13 +8,17 @@
 
   After all those years I have settled on using the latest Ubuntu LTS, using the default Gnome3 DE. Prior to 18.04 LTS I was using Unity DE.
 
+- **Gnome Terminal with Tmux**
+
+  Don't use tmux within tmux. OUCH!!
+
+  A significant part of my workflow involves using a terminal with tmux. It is rare for me to not have a tmux session when I am using a terminal.
+
 - **VSCode**
 
   It started with using Geany. Then when Atom came out, I was a pretty dedicated Atom user from the start, as of early 2018 I switched to VSCode.
 
   I have also dabbled in the Vim world, but so far have not been tempted to make a permanent switch.
-  
-#### 
 
 ## Programming Languages
 
