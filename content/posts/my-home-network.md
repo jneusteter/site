@@ -1,6 +1,6 @@
 ## My Home Network
 
-I have been on a mission to take full control of my home network. Not only control but amazing performance. This started about mid 2016. A network where I can control every device on the network, as in what time of the day it can access the netork or even which part of the network. This is a work in progress, so lets see where it takes me.
+I have been on a mission to take full control of my home network. Not only control but amazing performance. This started about mid 2016. A network where I can control every device on the network, as in what time of the day it can access the network or even which part of the network. This is a work in progress, so lets see where it takes me.
 
 But lets be clear, this is a lifetime project. There is always new technology coming out. There is always new hardware coming out. So I will be updating and upgrading as time goes on.
 
