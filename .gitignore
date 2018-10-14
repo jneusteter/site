@@ -2,4 +2,4 @@ crash.log
 tmp/
 node_modules/
 web/
-content/js/
+content/js/bundle.js
