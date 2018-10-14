@@ -48,12 +48,18 @@
 
   Until Sinatra becomes a problem because of scaling, its what I use.
 
-- Rspec
+- **Rspec**
 
   Umm... It make sense for me.
+
+- **Sequel**
+  
+  This is one of my favorite Ruby gems. Simple, clean, and very powerful.
 
 ## Server
 
 - **Debian & Ubuntu**
   
+  My home server is usually on the latest Ubuntu LTS. If I go with a production server, its pretty much a toss up between Debian and Ubuntu LTS.
 
+  I have played around with OpenBSD and FreeBSD as my home server. I had the time to learn a new OS, I would like to start using more OpenBSD.

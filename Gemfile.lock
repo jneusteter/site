@@ -3,6 +3,8 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    adsf (1.4.1)
+      rack (>= 1.0.0, < 3.0.0)
     builder (3.2.3)
     colored (1.2)
     concurrent-ruby (1.0.5)
@@ -29,6 +31,7 @@ GEM
       tomlrb (~> 1.2)
     parallel (1.12.1)
     public_suffix (3.0.2)
+    rack (2.0.5)
     ref (2.0.0)
     slow_enumerator_tools (1.1.0)
     tomlrb (1.2.7)
@@ -37,9 +40,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  adsf
   builder
   kramdown
   nanoc
 
 BUNDLED WITH
-   1.16.3
+   1.16.6
