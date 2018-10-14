@@ -19,7 +19,8 @@ var debtByYear = new Chart(ctx, {
       '2003-2004', '2004-2005', '2005-2006', '2006-2007', '2007-2008', // liberal
       '2008-2009', '2009-2010', '2010-2011', '2011-2012', '2012-2013', // liberal
       '2013-2014', '2014-2015', '2015-2016', '2016-2017', '2017-2018', // liberal
-      '2018-2019'],
+      '2018-2019'
+    ],
     datasets: [{
       label: 'Ontario Debt by Year',
       data: [31.5, 34, 35.5, 35.4, // liberal
@@ -27,7 +28,8 @@ var debtByYear = new Chart(ctx, {
         101.9, 108.8, 112.7, 114.7, 134.4, 132.5, 132.1, 132.6, // conservative
         138.8, 140.9, 152.7, 153.7, 156.6, 169.6, 193.6, 214.5, // liberal
         236.2, 252.8, 268.0, 285.4, 295.4, 301.6, 308.2,
-        150], // liberal
+        150
+      ], // liberal
       backgroundColor: [
         liberal, liberal, liberal, liberal,
         ndp, ndp, ndp, ndp, ndp, ndp,

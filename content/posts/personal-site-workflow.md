@@ -8,7 +8,7 @@ I am using VSCode with live Markdown preview. I think of my text editor as the a
 
 Nanoc is a Ruby Gem that compiles a site into static files for a web server. Anywhere on my pages, I can write erb code and Nanoc will execute it. So if I need to iterate over an array, I add this right inside my markdown.
 
-``` erb
+```erb
   <% array.each do |item| %>
     # do stuff
   <% end %>
@@ -28,17 +28,17 @@ From my VSCode, with a click of a button I send all commits to Github.
 
 ## Digital Ocean Droplet
 
-I have a minimal Digital Ocean Droplet. 512MB Ram with single CPU. 
+I have a minimal Digital Ocean Droplet. 512MB Ram with single CPU.
 
 ## Cron Job with Git Hooks
 
 Then I have a cron job polling Github every 10 minutes for any changes. If there are any changes, then there is an automated sequence of events. Listed below:
 
-  - git pull
-  - npm install
-  - npm run production
-  - bundle check || bundle install
-  - nanoc compile
+- git pull
+- npm install
+- npm run production
+- bundle check || bundle install
+- nanoc compile
 
 ## Static site Benefits
 
