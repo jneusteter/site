@@ -1,0 +1,22 @@
+<h3><%= @distance %> Meter <%= @style.capitalize %></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Meet</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>POS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% CadenceSwimRace.by(@distance, @style).each do |race| %>
+    <tr>
+      <td><%= race[:meet] %> (<%= course(race[:course]) %>)</td>
+      <td><%= Date.parse(race[:date], '%a, %B %-d, %Y') %></td>
+      <td><%= race[:time] %></td>
+      <td><%= race[:pos] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
