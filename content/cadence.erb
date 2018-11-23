@@ -1,7 +1,16 @@
-<h1>Cadence Neusteter <small>Gold: <%= CadenceSwimRace.medal_count(1) %> | Silver: <%= CadenceSwimRace.medal_count(2) %> | Bronze: <%= CadenceSwimRace.medal_count(3) %></small></h1>
+<div class="row">
+  <div class="col-md-2">
+    <img class="" src="/img/cadence.jpg" alt="">
+  </div>
+  <div class="col-md-6">
+    <h1>Cadence Neusteter <small>Gold: <%= CadenceSwimRace.medal_count(1) %> | Silver: <%= CadenceSwimRace.medal_count(2) %> | Bronze: <%= CadenceSwimRace.medal_count(3) %></small></h1>
+  </div>
+</div>
 
-<div class="col-md-6">
-  <% CadenceSwimRace.race_styles.each do |style| %>
-    <%= render '/cadence_race_table.erb', distance: style[:distance], style: style[:style] %>
-  <% end %>
+<div class="row">
+  <div class="col-md-5">
+    <% CadenceSwimRace.race_styles.each do |style| %>
+      <%= render '/cadence_race_table.erb', distance: style[:distance], style: style[:style] %>
+    <% end %>
+  </div>
 </div>
