@@ -98,7 +98,7 @@ class CadenceSwimRace
       { meet: 'Expressway Lincoln Fall Invitational', date: '2018/11/18', course: 25, style: 'back', distants: 100, time: '1:29.34', pos: 10 },
       { meet: 'Aqua 7 STJJ vs NHAC', date: '2018/12/8', course: 25, style: 'free', distants: 100, time: '1:13.69', pos: 1 },
       { meet: 'Aqua 7 STJJ vs NHAC', date: '2018/12/8', course: 25, style: 'back', distants: 100, time: '1:25.60', pos: 1 },
-      { meet: 'Aqua 7 STJJ vs NHAC', date: '2018/12/8', course: 25, style: 'fly', distants: 50, time: '42.73', pos: 1 },
+      { meet: 'Aqua 7 STJJ vs NHAC', date: '2018/12/8', course: 25, style: 'fly', distants: 50, time: '42.73', pos: 1 }
     ]
   end
 
