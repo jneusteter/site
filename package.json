@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --config webpack.config.js --mode=development",
     "production": "webpack --no-progress --config webpack.config.js --mode=production",
-    "watch": "npm run dev -- --watch"
+    "watch": "npm run dev -- --watch",
+    "nanoc": "bundle exec nanoc live"
   },
   "repository": {
     "type": "git",
