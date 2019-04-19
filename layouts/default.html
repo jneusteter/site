@@ -35,7 +35,8 @@
         your experience.
       </p>
     <![endif]-->
-    <%= render '/nav.erb' %> <%= yield %>
+    <%= render '/nav.erb' %>
+    <div class="container-fluid"><%= yield %></div>
 
     <script src="/js/bundle.js"></script>
     <script>
