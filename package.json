@@ -7,7 +7,8 @@
     "dev": "webpack --config webpack.config.js --mode=development",
     "production": "webpack --no-progress --config webpack.config.js --mode=production",
     "watch": "npm run dev -- --watch",
-    "nanoc": "bundle exec nanoc live"
+    "nanoc": "bundle exec nanoc live",
+    "sync-pics": "rsync -aP content/photography/ john@jneusteter.ca:/home/john/www/jneusteter.ca/content/photography"
   },
   "repository": {
     "type": "git",
