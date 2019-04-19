@@ -1,5 +1,15 @@
 #!/usr/bin/env ruby
 
+passthrough '/gallery/*'
+
+compile '/photography/**/*', rep: :thumbnail do
+  filter :thumbnailize, width: 200
+end
+
+route '/photography/**/*', rep: :thumbnail do
+  item.identifier.without_ext + '-thumbnail.' + item.identifier.ext
+end
+
 compile '/sitemap.xml.*' do
   filter :erb
   write '/sitemap.xml'

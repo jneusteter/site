@@ -8,6 +8,7 @@
     "production": "webpack --no-progress --config webpack.config.js --mode=production",
     "watch": "npm run dev -- --watch",
     "nanoc": "bundle exec nanoc live",
+    "nanoc_server": "bundle exec nanoc view -L -p 3001",
     "sync-pics": "rsync -aP content/photography/ john@jneusteter.ca:/home/john/www/jneusteter.ca/content/photography"
   },
   "repository": {

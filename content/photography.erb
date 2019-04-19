@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2>Gear</h2>
+  <hr />
+  <p>Canon EOS Rebel T3i</p>
+</div>
+<div class="col-md-6">
+  <% @items.find_all('/photography/**/*').each do |img| %>
+
+    <img src="<%= img.path(rep: :thumbnail) %>">
+
+  <% end %>
+</div>
