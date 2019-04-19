@@ -99,11 +99,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  adsf
-  builder
+  adsf (~> 1.4, >= 1.4.1)
+  builder (~> 3.2, >= 3.2.3)
   guard-nanoc
-  kramdown
-  nanoc
+  kramdown (~> 2.1)
+  nanoc (~> 4.11, >= 4.11.2)
   nanoc-live
 
 BUNDLED WITH
