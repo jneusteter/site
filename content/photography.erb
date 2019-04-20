@@ -7,7 +7,7 @@
   <div class="col-md-6">
     <% @items.find_all('/photography/**/*').each do |img| %>
       <a href="<%= img.path %>">
-        <img src="<%= img.path(rep: :thumbnail) %>">
+        <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= img[:alt] %>">
       </a>
     <% end %>
   </div>

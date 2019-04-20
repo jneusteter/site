@@ -9,7 +9,7 @@
     "watch": "npm run dev -- --watch",
     "nanoc": "bundle exec nanoc live",
     "nanoc_server": "bundle exec nanoc view -L -p 3001",
-    "sync-pics": "rsync -aP --delete content/photography/ john@jneusteter.ca:/home/john/www/jneusteter.ca/content/photography"
+    "sync-pics": "rsync -aP --delete --exclude '*.yaml' content/photography/ john@jneusteter.ca:/home/john/www/jneusteter.ca/content/photography"
   },
   "repository": {
     "type": "git",

@@ -3,4 +3,4 @@ tmp/
 node_modules/
 web/
 content/js/bundle.js
-content/photography/
+**/*.jpg
