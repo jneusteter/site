@@ -1,6 +1,8 @@
 extends:
-  - eslint:recommended
+  - plugin:vue/recommended
   - prettier
+  - prettier/standard
+  - prettier/vue
 
 parserOptions:
   ecmaVersion: 6

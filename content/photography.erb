@@ -6,9 +6,7 @@
   </div>
   <div class="col-md-6">
     <% @items.find_all('/photography/**/*').each do |img| %>
-      <a href="<%= img.path %>">
-        <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= img[:alt] %>">
-      </a>
+      <image-modal img-path="<%= img.path %>" src="<%= img.path(rep: :thumbnail) %>" alt="<%= img[:alt] %>"/>
     <% end %>
   </div>
 </div>
