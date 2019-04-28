@@ -2,6 +2,12 @@
 
 passthrough '/gallery/*'
 
+compile '/index.erb' do
+  filter :erb
+  layout '/default.*'
+  write '/index.html'
+end
+
 compile '/photography/**/*', rep: :thumbnail do
   filter :thumbnailize, width: 200
   write item.identifier.without_ext + '-thumbnail.' + item.identifier.ext
