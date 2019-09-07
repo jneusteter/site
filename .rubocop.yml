@@ -1,9 +1,0 @@
-Metrics/LineLength:
-  Max: 100
-  Severity: warning
-
-Metrics/BlockLength:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
