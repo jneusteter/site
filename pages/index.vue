@@ -3,9 +3,9 @@
     <div class="center">
       <h1 class="title">jneusteter</h1>
       <ul>
-        <li>tech</li>
-        <li>photography</li>
-        <li>contact</li>
+        <li><a href="#">tech</a></li>
+        <li><a href="#">photography</a></li>
+        <li><a href="http://twitter.com/jneusteter">contact</a></li>
       </ul>
     </div>
   </div>
@@ -21,6 +21,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+a {
+  text-decoration: none;
+  color: #888888;
+}
 .container {
   display: flex;
   flex-direction: column;
