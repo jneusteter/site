@@ -21,9 +21,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-* {
-  font-family: 'Courier New', Courier, monospace;
-}
 a {
   text-decoration: none;
   color: #888888;

@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <div v-for="time in cadenceSwimTimes" :key="time.id">{{ time }}</div>
+  <div class="container">
+    <h1>Cadence Neusteter</h1>
+    <div>
+      <img src="/img/cadence.jpg" alt="Cadence Neusteter" />
+    </div>
+    <div>
+      <div v-for="time in cadenceSwimTimes" :key="time.id">{{ time }}</div>
+    </div>
   </div>
 </template>
 
@@ -14,3 +20,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+}
+</style>
