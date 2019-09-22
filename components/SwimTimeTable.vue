@@ -4,24 +4,24 @@
       <h2>
         {{ `${events[0].distance}M ${events[0].style} (${course})` }}
       </h2>
-      <div class="table-container">
-        <table>
-          <thead>
-            <th>Meet</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Position</th>
-          </thead>
-          <tbody>
-            <tr v-for="event in events" :key="event.time">
-              <td>{{ event.meet }}</td>
-              <td>{{ event.date }}</td>
-              <td>{{ event.time }}</td>
-              <td>{{ event.pos }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="shadow">
+        <thead>
+          <th>Meet</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Position</th>
+        </thead>
+        <tbody>
+          <tr v-for="event in events" :key="event.time">
+            <td class="border-l-4 border-solid border-purple-800">
+              {{ event.meet }}
+            </td>
+            <td>{{ event.date }}</td>
+            <td>{{ event.time }}</td>
+            <td>{{ event.pos }}</td>
+          </tr>
+        </tbody>
+      </table>
     </span>
   </div>
 </template>
@@ -54,29 +54,25 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.table-container {
-  background: linear-gradient(-68deg, #ac32e4, #4801ff);
-  border-radius: .1rem;
-  font-family: sans-serif;
-}
 table {
   width: 100%;
-  border-collapse: collapse;
-  color: white;
+  background: #fff;
+  border-spacing: 0px;
 }
 th {
-  background-color: rbga(255,255,255,0.32);
   text-transform: uppercase;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  height: 56px;
+}
+tr {
+  height: 48px;
+  padding: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 td {
-  padding: 0.5rem;
+  padding-left: 24px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0,0,0,.12);
 }
-tr:hover {
-  background: rbga(255,255,255,0.1);
-}
-/* table, td, th {
-  border: 1px solid black;
-} */
 </style>

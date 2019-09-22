@@ -1,15 +1,21 @@
 <template>
   <div class="container">
-    <h1>Cadence Neusteter</h1>
-    <hr />
-    <div>
-      <img src="/img/cadence.jpg" alt="Cadence Neusteter" />
+    <div class="row shadow mb-3 pl-3 border-l-4 border-solid border-purple-800">
+      <h1 class="font-light">Cadence Neusteter</h1>
     </div>
-    <div v-for="style in styles" :key="style.id">
-      <div v-for="distance in distances" :key="distance.id">
-        <SwimTimeTable :events="events(distance, style, 25)" />
-        <SwimTimeTable :events="events(distance, style, 50)" />
+    <div class="shadow row p-3">
+      <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
+    </div>
+    <div class="row">
+      <div class="column">
+        <div v-for="style in styles" :key="style.id">
+          <div v-for="distance in distances" :key="distance.id">
+            <SwimTimeTable :events="events(distance, style, 25)" />
+            <SwimTimeTable :events="events(distance, style, 50)" />
+          </div>
+        </div>
       </div>
+      <p>test</p>
     </div>
   </div>
 </template>
@@ -58,12 +64,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-hr {
-  height: 0.8rem;
-  border: 0rem;
-  width: 100%;
-  box-shadow: 0 10px 10px -10px #ac32e4 inset;
-}
-</style>
