@@ -1,20 +1,20 @@
 <template>
   <div v-if="eventsExist">
     <h2 class="text-3xl m-2">
-      {{ `${events[0].distance}M ${events[0].style} (${course})` }}
+      {{ tableTitle }}
     </h2>
     <table class="shadow">
       <thead>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
           Meet
         </th>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
           Date
         </th>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
           Time
         </th>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
           Position
         </th>
       </thead>
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import _ from 'lodash'
+
 export default {
   props: {
     events: {
@@ -57,6 +59,10 @@ export default {
       } else {
         return 'LC'
       }
+    },
+    tableTitle() {
+      const style = _.capitalize(this.events[0].style)
+      return `${this.events[0].distance}M ${style} (${this.course})`
     }
   }
 }
