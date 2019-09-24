@@ -657,6 +657,33 @@
     "pos": 10
   },
   {
+    "meet": "ISS Acapulco Invitational",
+    "date": "2018/12/1",
+    "course": 25,
+    "style": "free",
+    "distance": 50,
+    "time": "33.24",
+    "pos": 2
+  },
+  {
+    "meet": "ISS Acapulco Invitational",
+    "date": "2018/12/1",
+    "course": 25,
+    "style": "free",
+    "distance": 200,
+    "time": "2:54.38",
+    "pos": 3
+  },
+  {
+    "meet": "ISS Acapulco Invitational",
+    "date": "2018/12/1",
+    "course": 25,
+    "style": "back",
+    "distance": 100,
+    "time": "1:24.81",
+    "pos": 2
+  },
+  {
     "meet": "Aqua 7 STJJ vs NHAC",
     "date": "2018/12/8",
     "course": 25,
@@ -681,6 +708,33 @@
     "style": "fly",
     "distance": 50,
     "time": "42.73",
+    "pos": 1
+  },
+  {
+    "meet": "Aqua 7 St. Thomas @ Ancaster",
+    "date": "2019/1/5",
+    "course": 25,
+    "style": "free",
+    "distance": 50,
+    "time": "32.12",
+    "pos": 1
+  },
+  {
+    "meet": "Aqua 7 St. Thomas @ Ancaster",
+    "date": "2019/1/5",
+    "course": 25,
+    "style": "back",
+    "distance": 50,
+    "time": "39.64",
+    "pos": 1
+  },
+  {
+    "meet": "Aqua 7 St. Thomas @ Ancaster",
+    "date": "2019/1/5",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "44.93",
     "pos": 1
   }
 ]

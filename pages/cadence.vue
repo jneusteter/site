@@ -1,14 +1,12 @@
 <template>
   <div class="container mx-auto flex-col">
     <div
-      class="row shadow-lg my-3 p-3 border-l-4 border-solid border-purple-800"
+      class="flex-row shadow-lg p-3 my-5 border-l-4 border-solid border-purple-800"
     >
+      <div>
+        <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
+      </div>
       <h1 class="font-normal text-3xl">Cadence Neusteter</h1>
-    </div>
-    <div
-      class="shadow-lg row p-3 mb-3 border-l-4 border-solid border-purple-800"
-    >
-      <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
     </div>
     <div class="row">
       <div class="column">

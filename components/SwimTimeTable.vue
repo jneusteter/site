@@ -2,6 +2,9 @@
   <div v-if="eventsExist">
     <h2 class="text-3xl m-2">
       {{ tableTitle }}
+      <span class="text-sm underline">
+        R:{{ qualifier(events[0].style, course, events[0].distance) }}
+      </span>
     </h2>
     <table class="shadow">
       <thead>
@@ -32,6 +35,7 @@
 
 <script>
 import _ from 'lodash'
+import qualifyingTimes from './data/swim_qualifying_times.js'
 
 export default {
   props: {
@@ -42,7 +46,8 @@ export default {
   },
   data() {
     return {
-      bottomBorder: 'border-b-2 border-solid border-purple-300 p-3'
+      bottomBorder: 'border-b-2 border-solid border-purple-300 p-3',
+      qualifyingTimes
     }
   },
   computed: {
@@ -63,6 +68,11 @@ export default {
     tableTitle() {
       const style = _.capitalize(this.events[0].style)
       return `${this.events[0].distance}M ${style} (${this.course})`
+    }
+  },
+  methods: {
+    qualifier(style, course, distance) {
+      return this.qualifyingTimes[style][course][distance]
     }
   }
 }
