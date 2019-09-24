@@ -21,8 +21,9 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6"
+    "@nuxtjs/axios": "^5.3.6",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
@@ -39,6 +40,7 @@
     "jest": "^24.1.0",
     "lint-staged": "^8.2.1",
     "prettier": "^1.16.4",
+    "tailwindcss": "^1.1.2",
     "vue-jest": "^4.0.0-0"
   }
 }

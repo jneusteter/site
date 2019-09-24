@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default {
   mode: 'spa',
   /*
@@ -29,7 +31,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/css/main.css'],
+  css: ['~assets/css/tailwind.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -61,6 +63,11 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    postcss: {
+      plugins: {
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js')
+      }
+    }
   }
 }

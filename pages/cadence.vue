@@ -1,21 +1,29 @@
 <template>
-  <div class="container">
-    <div class="row shadow mb-3 pl-3 border-l-4 border-solid border-purple-800">
-      <h1 class="font-light">Cadence Neusteter</h1>
+  <div class="container mx-auto flex-col">
+    <div
+      class="row shadow-lg my-3 p-3 border-l-4 border-solid border-purple-800"
+    >
+      <h1 class="font-normal text-3xl">Cadence Neusteter</h1>
     </div>
-    <div class="shadow row p-3">
+    <div
+      class="shadow-lg row p-3 mb-3 border-l-4 border-solid border-purple-800"
+    >
       <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
     </div>
     <div class="row">
       <div class="column">
         <div v-for="style in styles" :key="style.id">
-          <div v-for="distance in distances" :key="distance.id">
-            <SwimTimeTable :events="events(distance, style, 25)" />
-            <SwimTimeTable :events="events(distance, style, 50)" />
+          <div v-for="distance in distances" :key="distance.id" class="flex">
+            <div class="mr-4">
+              <SwimTimeTable :events="events(distance, style, 25)" />
+            </div>
+            <div>
+              <SwimTimeTable :events="events(distance, style, 50)" />
+            </div>
+            <hr />
           </div>
         </div>
       </div>
-      <p>test</p>
     </div>
   </div>
 </template>

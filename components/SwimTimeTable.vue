@@ -1,28 +1,32 @@
 <template>
-  <div>
-    <span v-if="eventsExist">
-      <h2>
-        {{ `${events[0].distance}M ${events[0].style} (${course})` }}
-      </h2>
-      <table class="shadow">
-        <thead>
-          <th>Meet</th>
-          <th>Date</th>
-          <th>Time</th>
-          <th>Position</th>
-        </thead>
-        <tbody>
-          <tr v-for="event in events" :key="event.time">
-            <td class="border-l-4 border-solid border-purple-800">
-              {{ event.meet }}
-            </td>
-            <td>{{ event.date }}</td>
-            <td>{{ event.time }}</td>
-            <td>{{ event.pos }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </span>
+  <div v-if="eventsExist">
+    <h2 class="text-3xl m-2">
+      {{ `${events[0].distance}M ${events[0].style} (${course})` }}
+    </h2>
+    <table class="shadow">
+      <thead>
+        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+          Meet
+        </th>
+        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+          Date
+        </th>
+        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+          Time
+        </th>
+        <th class="text-left p-3 border-b-2 border-solid border-purple-500">
+          Position
+        </th>
+      </thead>
+      <tbody>
+        <tr v-for="event in events" :key="event.time">
+          <td :class="[bottomBorder]">{{ event.meet }}</td>
+          <td :class="[bottomBorder]">{{ event.date }}</td>
+          <td :class="[bottomBorder]">{{ event.time }}</td>
+          <td :class="[bottomBorder]">{{ event.pos }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -32,6 +36,11 @@ export default {
     events: {
       type: Array,
       required: true
+    }
+  },
+  data() {
+    return {
+      bottomBorder: 'border-b-2 border-solid border-purple-300 p-3'
     }
   },
   computed: {
@@ -52,27 +61,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css" scoped>
-table {
-  width: 100%;
-  background: #fff;
-  border-spacing: 0px;
-}
-th {
-  text-transform: uppercase;
-  height: 56px;
-}
-tr {
-  height: 48px;
-  padding: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-}
-td {
-  padding-left: 24px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(0,0,0,.12);
-}
-</style>
