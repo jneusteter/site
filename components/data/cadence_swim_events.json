@@ -736,5 +736,140 @@
     "distance": 50,
     "time": "44.93",
     "pos": 1
+  },
+  {
+    "meet": "Dean Boles Invitational",
+    "date": "2019/1/19",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "44.93",
+    "pos": 2
+  },
+  {
+    "meet": "Dean Boles Invitational",
+    "date": "2019/1/19",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "44.93",
+    "pos": 1
+  },
+  {
+    "meet": "Dean Boles Invitational",
+    "date": "2019/1/19",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "44.93",
+    "pos": 2
+  },
+  {
+    "meet": "2019 Western Region SC Champs",
+    "date": "2019/1/31",
+    "course": 25,
+    "style": "free",
+    "distance": 50,
+    "time": "32.02",
+    "pos": 16
+  },
+  {
+    "meet": "2019 Western Region SC Champs",
+    "date": "2019/1/31",
+    "course": 25,
+    "style": "free",
+    "distance": 100,
+    "time": "1:12.47",
+    "pos": 25
+  },
+  {
+    "meet": "2019 Western Region SC Champs",
+    "date": "2019/1/31",
+    "course": 25,
+    "style": "back",
+    "distance": 50,
+    "time": "38.52",
+    "pos": 23
+  },
+  {
+    "meet": "2019 Western Region SC Champs",
+    "date": "2019/1/31",
+    "course": 25,
+    "style": "fly",
+    "distance": 100,
+    "time": "1:24.83",
+    "pos": 31
+  },
+  {
+    "meet": "Aqua 7 - STJJ VS WAAC",
+    "date": "2019/2/10",
+    "course": 25,
+    "style": "free",
+    "distance": 100,
+    "time": "1:13.07",
+    "pos": 1
+  },
+  {
+    "meet": "Aqua 7 - STJJ VS WAAC",
+    "date": "2019/2/10",
+    "course": 25,
+    "style": "free",
+    "distance": 400,
+    "time": "5:51.28",
+    "pos": 2
+  },
+  {
+    "meet": "Aqua 7 - STJJ VS WAAC",
+    "date": "2019/2/10",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "41.46",
+    "pos": 1
+  },
+  {
+    "meet": "WAC Spring Invitational",
+    "date": "2019/3/29",
+    "course": 50,
+    "style": "free",
+    "distance": 50,
+    "time": "32.55",
+    "pos": 6
+  },
+  {
+    "meet": "WAC Spring Invitational",
+    "date": "2019/3/29",
+    "course": 50,
+    "style": "free",
+    "distance": 100,
+    "time": "1:15.13",
+    "pos": 11
+  },
+  {
+    "meet": "WAC Spring Invitational",
+    "date": "2019/3/29",
+    "course": 50,
+    "style": "free",
+    "distance": 200,
+    "time": "2:49.30",
+    "pos": 9
+  },
+  {
+    "meet": "WAC Spring Invitational",
+    "date": "2019/3/29",
+    "course": 50,
+    "style": "back",
+    "distance": 50,
+    "time": "38.29",
+    "pos": 4
+  },
+  {
+    "meet": "WAC Spring Invitational",
+    "date": "2019/3/29",
+    "course": 50,
+    "style": "fly",
+    "distance": 50,
+    "time": "39.50",
+    "pos": 8
   }
 ]
