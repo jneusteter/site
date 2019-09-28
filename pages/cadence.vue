@@ -1,26 +1,19 @@
 <template>
   <div class="container mx-auto flex-col">
     <div
-      class="flex-row shadow-lg p-3 my-5 border-l-4 border-solid border-purple-800"
+      class="flex shadow-lg p-3 my-5 border-l-4 border-solid border-purple-800"
     >
-      <div>
-        <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
-      </div>
-      <h1 class="font-normal text-3xl">Cadence Neusteter</h1>
+      <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
+      <h1 class="font-normal text-3xl p-4">Cadence Neusteter</h1>
     </div>
-    <div class="row">
-      <div class="column">
-        <div v-for="style in styles" :key="style.id">
-          <div v-for="distance in distances" :key="distance.id" class="flex">
-            <div class="mr-4">
-              <SwimTimeTable :events="events(distance, style, 25)" />
-            </div>
-            <div>
-              <SwimTimeTable :events="events(distance, style, 50)" />
-            </div>
-            <hr />
-          </div>
-        </div>
+    <div v-for="style in styles" :key="style.id">
+      <div
+        v-for="distance in distances"
+        :key="distance.id"
+        class="flex justify-around"
+      >
+        <SwimTimeTable :events="events(distance, style, 25)" />
+        <SwimTimeTable :events="events(distance, style, 50)" />
       </div>
     </div>
   </div>

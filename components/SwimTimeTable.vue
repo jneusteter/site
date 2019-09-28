@@ -1,32 +1,32 @@
 <template>
-  <div v-if="eventsExist">
-    <h2 class="text-3xl m-2">
+  <div v-if="eventsExist" class="shadow my-6 bg-purple-100 rounded-lg">
+    <h2 class="p-3 text-3xl m-2">
       {{ tableTitle }}
       <span class="text-sm underline">
         R:{{ qualifier(events[0].style, course, events[0].distance) }}
       </span>
     </h2>
-    <table class="shadow">
+    <table class="bg-white max-w-full">
       <thead>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
+        <th :class="[bottomHeaderBorder]">
           Meet
         </th>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
+        <th :class="[bottomHeaderBorder]">
           Date
         </th>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
+        <th :class="[bottomHeaderBorder]">
           Time
         </th>
-        <th class="text-left p-3 border-b-2 border-solid border-purple-600">
+        <th :class="[bottomHeaderBorder]">
           Position
         </th>
       </thead>
       <tbody>
         <tr v-for="event in events" :key="event.time">
-          <td :class="[bottomBorder]">{{ event.meet }}</td>
-          <td :class="[bottomBorder]">{{ event.date }}</td>
-          <td :class="[bottomBorder]">{{ event.time }}</td>
-          <td :class="[bottomBorder]">{{ event.pos }}</td>
+          <td :class="[bottomCellBorder]">{{ event.meet }}</td>
+          <td :class="[bottomCellBorder]">{{ event.date }}</td>
+          <td :class="[bottomCellBorder]">{{ event.time }}</td>
+          <td :class="[bottomCellBorder]">{{ event.pos }}</td>
         </tr>
       </tbody>
     </table>
@@ -46,7 +46,9 @@ export default {
   },
   data() {
     return {
-      bottomBorder: 'border-b-2 border-solid border-purple-300 p-3',
+      bottomCellBorder: 'border-b-2 border-solid border-purple-300 p-3',
+      bottomHeaderBorder:
+        'text-left p-3 border-b-2 border-solid border-purple-600',
       qualifyingTimes
     }
   },
