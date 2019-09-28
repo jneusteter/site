@@ -3,7 +3,8 @@
     <h2 class="p-3 text-3xl m-2">
       {{ tableTitle }}
       <span class="text-sm underline">
-        R:{{ qualifier(events[0].style, course, events[0].distance) }}
+        R:{{ regionalQualifier(events[0].style, course, events[0].distance) }}|
+        F:{{ festivalQualifier(events[0].style, course, events[0].distance) }}
       </span>
     </h2>
     <table class="bg-white max-w-full">
@@ -35,7 +36,7 @@
 
 <script>
 import _ from 'lodash'
-import qualifyingTimes from './data/swim_qualifying_times.js'
+import { regional, festival } from './data/swim_qualifying_times.js'
 
 export default {
   props: {
@@ -49,7 +50,8 @@ export default {
       bottomCellBorder: 'border-b-2 border-solid border-purple-300 p-3',
       bottomHeaderBorder:
         'text-left p-3 border-b-2 border-solid border-purple-600',
-      qualifyingTimes
+      regional,
+      festival
     }
   },
   computed: {
@@ -73,8 +75,11 @@ export default {
     }
   },
   methods: {
-    qualifier(style, course, distance) {
-      return this.qualifyingTimes[style][course][distance]
+    regionalQualifier(style, course, distance) {
+      return this.regional[style][course][distance]
+    },
+    festivalQualifier(style, course, distance) {
+      return this.festival[style][course][distance]
     }
   }
 }

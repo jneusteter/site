@@ -871,5 +871,95 @@
     "distance": 50,
     "time": "39.50",
     "pos": 8
+  },
+  {
+    "meet": "Aqua 7 Finals",
+    "date": "2019/5/5",
+    "course": 25,
+    "style": "free",
+    "distance": 50,
+    "time": "30.86",
+    "pos": 1
+  },
+  {
+    "meet": "Aqua 7 Finals",
+    "date": "2019/5/5",
+    "course": 25,
+    "style": "back",
+    "distance": 50,
+    "time": "37.32",
+    "pos": 3
+  },
+  {
+    "meet": "Aqua 7 Finals",
+    "date": "2019/5/5",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "38.73",
+    "pos": 4
+  },
+  {
+    "meet": "Hollandia Spring Invitational",
+    "date": "2019/5/9",
+    "course": 50,
+    "style": "back",
+    "distance": 50,
+    "time": "37.86",
+    "pos": 3
+  },
+  {
+    "meet": "Hollandia Spring Invitational",
+    "date": "2019/5/9",
+    "course": 50,
+    "style": "breast",
+    "distance": 50,
+    "time": "48.62",
+    "pos": 20
+  },
+  {
+    "meet": "Hollandia Spring Invitational",
+    "date": "2019/5/9",
+    "course": 50,
+    "style": "fly",
+    "distance": 50,
+    "time": "38.16",
+    "pos": 11
+  },
+  {
+    "meet": "Western Regional LC Champs",
+    "date": "2019/5/31",
+    "course": 50,
+    "style": "free",
+    "distance": 50,
+    "time": "32.21",
+    "pos": 30
+  },
+  {
+    "meet": "Western Regional LC Champs",
+    "date": "2019/5/31",
+    "course": 50,
+    "style": "free",
+    "distance": 100,
+    "time": "1:13.45",
+    "pos": 35
+  },
+  {
+    "meet": "Western Regional LC Champs",
+    "date": "2019/5/31",
+    "course": 50,
+    "style": "back",
+    "distance": 50,
+    "time": "38.03",
+    "pos": 23
+  },
+  {
+    "meet": "Western Regional LC Champs",
+    "date": "2019/5/31",
+    "course": 50,
+    "style": "back",
+    "distance": 200,
+    "time": "3:05.10",
+    "pos": 4
   }
 ]

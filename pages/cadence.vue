@@ -4,7 +4,12 @@
       class="flex shadow-lg p-3 my-5 border-l-4 border-solid border-purple-800"
     >
       <img class="shadow" src="/img/cadence.jpg" alt="Cadence Neusteter" />
-      <h1 class="font-normal text-3xl p-4">Cadence Neusteter</h1>
+      <div class="p-4">
+        <h1 class="font-normal text-4xl">Cadence Neusteter</h1>
+        <a href="https://www.swimming.ca/en/swimmer/4900749/" target="_blank"
+          >Swimming Canada Profile</a
+        >
+      </div>
     </div>
     <div v-for="style in styles" :key="style.id">
       <div
@@ -45,7 +50,11 @@ export default {
       this.cadenceSwimEvents.forEach((event) => {
         distances.push(event.distance)
       })
-      return [...new Set(distances)]
+
+      const sorted = distances.sort((a, b) => {
+        return a - b
+      })
+      return [...new Set(sorted)]
     }
   },
   methods: {
