@@ -1,13 +1,16 @@
 <template>
-  <div>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/GoHmmYmm9xU"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    >
-    </iframe>
+  <div class="flex flex-col m-3">
+    <ChildHeaderCard left-border="border-orange-600" name="Shane Neusteter">
+      <template v-slot:image></template>
+    </ChildHeaderCard>
   </div>
 </template>
+
+<script>
+import ChildHeaderCard from '../components/ChildHeaderCard.vue'
+export default {
+  components: {
+    ChildHeaderCard
+  }
+}
+</script>
