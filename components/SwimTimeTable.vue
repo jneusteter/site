@@ -23,7 +23,7 @@
         </th>
       </thead>
       <tbody>
-        <tr v-for="event in events" :key="event.time">
+        <tr v-for="event in events" :key="event.id">
           <td :class="[bottomCellBorder]">{{ event.meet }}</td>
           <td :class="[bottomCellBorder]">{{ event.date }}</td>
           <td :class="[bottomCellBorder]">{{ event.time }}</td>

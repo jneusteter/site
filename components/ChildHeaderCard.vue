@@ -7,11 +7,9 @@
   >
     <slot name="image"></slot>
     <div class="p-6">
-      <h1 class="font-normal text-4xl">{{ name }}</h1>
-      <a href="https://www.swimming.ca/en/swimmer/4900749/" target="_blank"
-        >Swimming Canada Profile</a
-      >
+      <slot name="titles"></slot>
     </div>
+    <slot name="youtube"></slot>
   </div>
 </template>
 

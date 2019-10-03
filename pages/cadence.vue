@@ -1,12 +1,18 @@
 <template>
   <div class="flex flex-col m-3">
-    <ChildHeaderCard left-border="border-purple-800" name="Cadence Neusteter">
+    <ChildHeaderCard left-border="border-purple-800">
       <template v-slot:image>
         <img
           class="shadow m-auto md:m-0"
           src="/img/cadence.jpg"
           alt="Cadence Neusteter"
         />
+      </template>
+      <template v-slot:titles>
+        <h1 class="font-normal text-4xl">Cadence Neusteter</h1>
+        <a href="https://www.swimming.ca/en/swimmer/4900749/" target="_blank"
+          >Swimming Canada Profile</a
+        >
       </template>
     </ChildHeaderCard>
     <div v-for="style in styles" :key="style.id">
