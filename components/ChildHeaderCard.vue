@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'flex flex-col md:flex-row shadow-lg p-3 my-5 border-l-4 border-solid rounded-sm',
+      'flex flex-col md:flex-row card shadow-lg p-3 my-5 border-l-4 border-solid rounded-sm',
       leftBorder
     ]"
   >
@@ -27,3 +27,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.card {
+  height: 400px;
+}
+</style>

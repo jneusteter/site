@@ -2,12 +2,7 @@
   <div class="flex flex-col m-3">
     <ChildHeaderCard left-border="border-orange-600" name="Shane Neusteter">
       <template v-slot:image>
-        <img
-          class="shadow m-auto md:m-0"
-          height="100"
-          src="/img/shane2018_300.jpg"
-          alt="Shane Neusteter"
-        />
+        <ImageSlider :images="images" />
       </template>
       <template v-slot:titles>
         <h1 class="font-normal text-4xl">Shane Neusteter</h1>
@@ -29,9 +24,17 @@
 
 <script>
 import ChildHeaderCard from '../components/ChildHeaderCard.vue'
+import ImageSlider from '../components/ImageSlider.vue'
+
 export default {
   components: {
-    ChildHeaderCard
+    ChildHeaderCard,
+    ImageSlider
+  },
+  data() {
+    return {
+      images: ['/img/shane2018_300.jpg']
+    }
   }
 }
 </script>

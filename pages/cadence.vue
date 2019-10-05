@@ -2,11 +2,7 @@
   <div class="flex flex-col m-3">
     <ChildHeaderCard left-border="border-purple-800">
       <template v-slot:image>
-        <img
-          class="shadow m-auto md:m-0"
-          src="/img/cadence.jpg"
-          alt="Cadence Neusteter"
-        />
+        <ImageSlider :images="images" />
       </template>
       <template v-slot:titles>
         <h1 class="font-normal text-4xl">Cadence Neusteter</h1>
@@ -32,15 +28,18 @@
 import swimEvents from '../components/data/cadence_swim_events.json'
 import SwimTimeTable from '../components/SwimTimeTable.vue'
 import ChildHeaderCard from '../components/ChildHeaderCard.vue'
+import ImageSlider from '../components/ImageSlider.vue'
 
 export default {
   components: {
     SwimTimeTable,
-    ChildHeaderCard
+    ChildHeaderCard,
+    ImageSlider
   },
   data() {
     return {
-      cadenceSwimEvents: swimEvents
+      cadenceSwimEvents: swimEvents,
+      images: ['/img/cadence.jpg', '/img/cadence2018_300.jpg']
     }
   },
   computed: {
