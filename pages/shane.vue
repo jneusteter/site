@@ -6,18 +6,14 @@
       </template>
       <template v-slot:titles>
         <h1 class="font-normal text-4xl">Shane Neusteter</h1>
+        <h3 class="font-normal text-2xl underline">Awards</h3>
+        <ul>
+          <li>AMHA Most Outstanding Defensemen 2017</li>
+          <li>AMHA Most Outstanding Defensemen 2018</li>
+          <li>AMHA Best Player Pound for Pound 2019</li>
+        </ul>
       </template>
-      <template v-slot:youtube>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/oruq6TEnCrw"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
-        </iframe>
-      </template>
+      <template v-slot:youtube></template>
     </ChildHeaderCard>
   </div>
 </template>

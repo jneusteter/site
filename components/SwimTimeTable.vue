@@ -24,7 +24,11 @@
       </thead>
       <tbody>
         <tr v-for="event in events" :key="event.id">
-          <td :class="[bottomCellBorder]">{{ event.meet }}</td>
+          <td :class="[bottomCellBorder]">
+            <a :href="event.meetResultsPage" target="_blank">{{
+              event.meet
+            }}</a>
+          </td>
           <td :class="[bottomCellBorder]">{{ event.date }}</td>
           <td :class="[bottomCellBorder]">{{ event.time }}</td>
           <td :class="[bottomCellBorder]">{{ event.pos }}</td>
