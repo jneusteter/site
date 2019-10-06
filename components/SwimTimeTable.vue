@@ -1,5 +1,5 @@
 <template>
-  <div v-if="eventsExist" class="shadow my-6 bg-purple-100 rounded-lg">
+  <div v-if="eventsExist" class="shadow m-6 bg-purple-100 rounded-lg">
     <h2 class="p-3 text-3xl m-2">
       {{ tableTitle }}
       <span class="text-sm underline">
@@ -8,7 +8,7 @@
       </span>
     </h2>
     <table class="bg-white max-w-full">
-      <thead>
+      <thead class="text-gray-600">
         <th :class="[bottomHeaderBorder]">
           Meet
         </th>
@@ -22,7 +22,7 @@
           Position
         </th>
       </thead>
-      <tbody>
+      <tbody class="text-gray-900">
         <tr v-for="event in events" :key="event.id">
           <td :class="[bottomCellBorder]">
             <a :href="event.meetResultsPage" target="_blank">{{

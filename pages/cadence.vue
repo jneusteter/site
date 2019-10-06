@@ -12,11 +12,8 @@
       </template>
     </ChildHeaderCard>
     <div v-for="style in styles" :key="style.id">
-      <div
-        v-for="distance in distances"
-        :key="distance.id"
-        class="flex justify-around"
-      >
+      <div v-for="distance in distances" :key="distance.id" class="flex">
+        <h2>{{ Style }}</h2>
         <SwimTimeTable :events="events(distance, style, 25)" />
         <SwimTimeTable :events="events(distance, style, 50)" />
       </div>
