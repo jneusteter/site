@@ -1134,7 +1134,7 @@
   },
   {
     "id": 103,
-    "meetResultsPage": "https://www.swimming.ca/en/meet/615861/?faction=81949",
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
     "meet": "Western Regional LC Champs",
     "date": "2019/5/31",
     "course": 50,
@@ -1175,5 +1175,82 @@
     "distance": 200,
     "time": "3:05.10",
     "pos": 4
+  },
+  {
+    "id": 107,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "free",
+    "distance": 25,
+    "time": "14.90",
+    "pos": 1
+  },
+  {
+    "id": 108,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "free",
+    "distance": 50,
+    "time": "30.81",
+    "pos": 2
+  },
+  {
+    "id": 109,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "back",
+    "distance": 50,
+    "time": "37.02",
+    "pos": 2
+  },
+  {
+    "id": 110,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "breast",
+    "distance": 50,
+    "time": "47.93",
+    "pos": 11
+  },
+  {
+    "id": 111,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "fly",
+    "distance": 25,
+    "time": "17.00",
+    "pos": 1
+  },
+  {
+    "id": 112,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "fly",
+    "distance": 50,
+    "time": "37.48",
+    "pos": 3
+  },
+  {
+    "id": 113,
+    "meetResultsPage": "https://www.swimming.ca/en/meet/617547/?faction=81949",
+    "meet": "Flying Free Invitational",
+    "date": "2019/10/19",
+    "course": 25,
+    "style": "medley",
+    "distance": 100,
+    "time": "1:21.06",
+    "pos": 1
   }
 ]
