@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col m-3">
     <ChildHeaderCard left-border="border-orange-600" name="Shane Neusteter">
-      <template v-slot:image>
+      <template #image>
         <ImageSlider :images="images" />
       </template>
-      <template v-slot:titles>
+      <template #titles>
         <h1 class="font-normal text-4xl">Shane Neusteter</h1>
         <h3 class="font-normal text-2xl underline">Awards</h3>
         <ul>
@@ -13,7 +13,7 @@
           <li>AMHA Best Player Pound for Pound 2019</li>
         </ul>
       </template>
-      <template v-slot:youtube></template>
+      <template #youtube></template>
     </ChildHeaderCard>
   </div>
 </template>

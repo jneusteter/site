@@ -9,18 +9,10 @@
     </h2>
     <table class="bg-white max-w-full">
       <thead class="text-gray-600">
-        <th :class="[bottomHeaderBorder]">
-          Meet
-        </th>
-        <th :class="[bottomHeaderBorder]">
-          Date
-        </th>
-        <th :class="[bottomHeaderBorder]">
-          Time
-        </th>
-        <th :class="[bottomHeaderBorder]">
-          Position
-        </th>
+        <th :class="[bottomHeaderBorder]">Meet</th>
+        <th :class="[bottomHeaderBorder]">Date</th>
+        <th :class="[bottomHeaderBorder]">Time</th>
+        <th :class="[bottomHeaderBorder]">Position</th>
       </thead>
       <tbody class="text-gray-900">
         <tr v-for="event in events" :key="event.id">
