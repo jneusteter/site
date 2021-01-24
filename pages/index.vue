@@ -1,8 +1,18 @@
 <template>
   <div class="container mx-auto mt-64">
-    jneusteter
-    <ul>
-      <li><a href="http://twitter.com/jneusteter">contact</a></li>
+    <span class="tracking-widest font-semibold text-xl text-gray-900">
+      jneusteter
+    </span>
+
+    <ul class="inline list-none">
+      <li>
+        <a
+          class="text-gray-400 tracking-wider"
+          href="http://twitter.com/jneusteter"
+        >
+          contact
+        </a>
+      </li>
     </ul>
   </div>
 </template>
@@ -15,16 +25,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css" scoped>
-a {
-  text-decoration: none;
-  color: #888888;
-}
-ul {
-  list-style-type: none;
-}
-li {
-  display: inline;
-}
-</style>

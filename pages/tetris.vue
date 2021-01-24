@@ -13,5 +13,3 @@ export default {
   layout: 'index'
 }
 </script>
-
-<style scoped></style>
