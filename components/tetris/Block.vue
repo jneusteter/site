@@ -57,5 +57,6 @@ export default {
 
 .block {
   color: black;
+  border: 1px red solid;
 }
 </style>

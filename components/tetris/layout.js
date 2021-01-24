@@ -1,7 +1,7 @@
 export default {
   data() {
     return {
-      blocksWide: 11,
+      blocksWide: 10,
       blocksHigh: 20
     }
   },
