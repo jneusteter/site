@@ -2,17 +2,16 @@
   <div v-if="eventsExist" class="shadow m-6 bg-purple-100 rounded-lg">
     <h2 class="p-3 text-3xl m-2">
       {{ tableTitle }}
-      <span class="text-sm underline">
-        R:{{ regionalQualifier(events[0].style, course, events[0].distance) }}|
-        F:{{ festivalQualifier(events[0].style, course, events[0].distance) }}
-      </span>
+      <span class="text-sm underline"> </span>
     </h2>
     <table class="bg-white max-w-full">
       <thead class="text-gray-600">
-        <th :class="[bottomHeaderBorder]">Meet</th>
-        <th :class="[bottomHeaderBorder]">Date</th>
-        <th :class="[bottomHeaderBorder]">Time</th>
-        <th :class="[bottomHeaderBorder]">Position</th>
+        <tr>
+          <th :class="[bottomHeaderBorder]">Meet</th>
+          <th :class="[bottomHeaderBorder]">Date</th>
+          <th :class="[bottomHeaderBorder]">Time</th>
+          <th :class="[bottomHeaderBorder]">Position</th>
+        </tr>
       </thead>
       <tbody class="text-gray-900">
         <tr v-for="event in events" :key="event.id">
@@ -31,8 +30,8 @@
 </template>
 
 <script>
-import _ from 'lodash'
-import { regional, festival } from './data/swim_qualifying_times.js'
+import { capitalize } from 'lodash'
+import { regional, festival } from '../data/swim_qualifying_times.js'
 
 export default {
   props: {
@@ -52,21 +51,13 @@ export default {
   },
   computed: {
     eventsExist() {
-      if (this.events.length === 0) {
-        return false
-      } else {
-        return true
-      }
+      return this.events.length !== 0
     },
     course() {
-      if (this.events[0].course === 25) {
-        return 'SC'
-      } else {
-        return 'LC'
-      }
+      return this.events[0].course === 25 ? 'SC' : 'LC'
     },
     tableTitle() {
-      const style = _.capitalize(this.events[0].style)
+      const style = capitalize(this.events[0].style)
       return `${this.events[0].distance}M ${style} (${this.course})`
     }
   },

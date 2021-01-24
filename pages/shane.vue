@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import ChildHeaderCard from '../components/ChildHeaderCard.vue'
-import ImageSlider from '../components/ImageSlider.vue'
+import ChildHeaderCard from '../components/profile/ChildHeaderCard.vue'
+import ImageSlider from '../components/profile/ImageSlider.vue'
 
 export default {
   components: {
