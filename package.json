@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
@@ -20,7 +20,6 @@
     }
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.13.0",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.12"
