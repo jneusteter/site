@@ -1,6 +1,7 @@
 <template>
   <div class="p-3">
-    <table>
+    <price-calculator />
+    <table style="display: none">
       <tr>
         <th>Name:</th>
         <th>Type:</th>
@@ -20,10 +21,11 @@
 <script>
 import { sortBy } from 'lodash'
 import TableRow from '../components/one_session/TableRow.vue'
+import PriceCalculator from '../components/one_session/PriceCalculator.vue'
 import oneSession from '../components/data/one_session.js'
 
 export default {
-  components: { TableRow },
+  components: { TableRow, PriceCalculator },
   layout: 'index',
   computed: {
     items() {
