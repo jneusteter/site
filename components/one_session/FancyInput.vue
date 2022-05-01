@@ -1,17 +1,24 @@
 <template>
   <div class="flex">
     <span
-      :class="`${prependColours} ${prependBorders} inline-flex items-center px-3 text-sm`"
+      :class="`${pendColours} ${pendBorders} inline-flex items-center px-3 text-sm`"
     >
       {{ prepend }}
     </span>
     <input
-      :class="`${inputColours} w-full rounded-none rounded-r-lg p-2.5`"
+      ref="input"
+      :class="inputClasses"
       :value="value"
       @input="$emit('input', $event.target.value)"
       type="number"
       placeholder="ml"
     />
+    <span
+      :class="`${pendColours} border border-r-0 rounded-r-md inline-flex items-center px-3`"
+      @click="clear()"
+    >
+      Clear
+    </span>
   </div>
 </template>
 
@@ -28,16 +35,23 @@ export default {
     }
   },
   computed: {
-    inputColours() {
-      return 'bg-gray-700 \
+    inputClasses() {
+      return `bg-gray-700 text-white \
         border-gray-600 focus:border-blue-500 focus:ring-blue-500 \
-        text-white'
+        w-full \
+        p-2.5`
     },
-    prependColours() {
+    pendColours() {
       return 'border-gray-600 text-gray-400 bg-gray-600'
     },
-    prependBorders() {
+    pendBorders() {
       return 'border border-r-0 rounded-l-md'
+    }
+  },
+  methods: {
+    clear() {
+      this.$emit('clear')
+      this.$refs.input.focus()
     }
   }
 }
