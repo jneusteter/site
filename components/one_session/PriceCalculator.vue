@@ -1,16 +1,13 @@
 <template>
-  <div>
+  <div class="flex flex-col gap-y-1 bg-gradient-to-br">
     <div class="text-2xl text-white">Price Per Drink</div>
-    <fancy-input v-model="ml" ref="ml" prepend="ml" class="mb-1" />
-    <input
-      class="rounded mb-1 p-1"
-      type="number"
-      v-model="qty"
-      placeholder="qty"
-    />
-    <input class="rounded mb-1 p-1" type="text" v-model="abv" />
+    <fancy-input v-model="ml" ref="ml" prepend="ml" />
+    <fancy-input v-model="qty" prepend="QTY" />
+    <fancy-input v-model="abv" prepend="ABV" />
+    <fancy-input v-model="price" prepend="Price" />
+
     <div class="text-white">
-      Price Per Drink: ${{ price.toFixed(2) }}
+      Price Per Drink: ${{ pricePerDrink.toFixed(2) }}
       <br />
       Standard Drinks:
       {{ standardDrinks.toFixed(2) }}
@@ -25,21 +22,21 @@ export default {
   data() {
     return {
       ml: null,
-      qty: 0,
-      abv: 0
+      qty: 1,
+      abv: 0,
+      price: 0
     }
   },
   mounted() {
     this.$refs.ml.$el.focus()
   },
   computed: {
-    price() {
-      return this.ml * this.qty
+    pricePerDrink() {
+      const price = this.price / this.standardDrinks
+      return price ? price : 0.0
     },
     standardDrinks() {
-      if (!this.ml) return 0
-      const amount = (this.ml / 1000) * this.abv * 0.789
-      return this.qty ? amount * this.qty : amount
+      return ((this.ml * this.qty) / 1000) * this.abv * 0.789
     }
   }
 }

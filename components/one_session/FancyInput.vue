@@ -6,7 +6,7 @@
       {{ prepend }}
     </span>
     <input
-      :class="`${inputColours} rounded-none rounded-r-lg p-2.5`"
+      :class="`${inputColours} w-full rounded-none rounded-r-lg p-2.5`"
       :value="value"
       @input="$emit('input', $event.target.value)"
       type="number"
