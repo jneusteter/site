@@ -1,4 +1,6 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
   target: 'static',
   head: {
     title: 'jneusteter.ca',
@@ -15,8 +17,8 @@ export default {
   css: ['@/assets/css/main.css'],
   plugins: [],
   components: true,
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss'],
   modules: ['@nuxtjs/axios'],
   axios: {},
   build: {}
-}
+})
