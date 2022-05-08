@@ -2,6 +2,7 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
   target: 'static',
+  ssr: false,
   head: {
     title: 'jneusteter.ca',
     htmlAttrs: {

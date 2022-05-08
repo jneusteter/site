@@ -31,7 +31,7 @@
 
 <script>
 import { capitalize } from 'lodash'
-import { regional, festival } from '../data/swim_qualifying_times.js'
+import qualifyTime from '../data/swim_qualifying_times.js'
 
 export default {
   props: {
@@ -45,8 +45,8 @@ export default {
       bottomCellBorder: 'border-b-2 border-solid border-purple-300 p-3',
       bottomHeaderBorder:
         'text-left p-3 border-b-2 border-solid border-purple-600',
-      regional,
-      festival
+      regional: qualifyTime.regional,
+      festival: qualifyTime.festival
     }
   },
   computed: {

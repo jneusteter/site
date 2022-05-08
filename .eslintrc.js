@@ -1,4 +1,4 @@
-module.exports = {
+export default () => ({
   root: true,
   env: {
     browser: true,
@@ -16,4 +16,4 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {}
-}
+})
